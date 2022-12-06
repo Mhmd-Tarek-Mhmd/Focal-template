@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --white: #fff;
+  --gray: #566366;
+  --green: #2ecc71;
+  --light-gray: #919191;
+  --very-light-gray: #f2f2f1;
+}
+
+/*
+  Reset
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+button {
+  border: none;
+  background: none;
+}
+input {
+  outline-color: var(--black);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/*
+  Components
+*/
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 14px;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: 700;
+  border: 1px solid;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+}
+
+.badge {
+  width: 71px;
+  height: 29px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: var(--green);
+}
+
+.divider {
+  border-color: #cccccc;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .mobile-center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/*
+  Utilities
+*/
+
+/* Color */
+.green {
+  color: var(--green);
+}
+.white {
+  color: var(--white);
+}
+.bg-green {
+  background-color: var(--green);
+}
+.bg-very-light-gray {
+  background-color: var(--very-light-gray);
+}
+
+/* Position */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+/* Text */
+.text-bold {
+  font-weight: 700;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .mobile-text-center {
+    text-align: center;
+  }
+}
+
+.title {
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+.title.h1 {
+  font-size: 30px;
+}
+.title.h2 {
+  font-size: 22px;
+}
+
+.txt {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--light-gray);
+}
+
+/* Layout */
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .mobile-justify-between {
+    justify-content: space-between;
+  }
+  .mobile-align-center {
+    align-items: center;
+  }
+  .mobile-flex-column {
+    flex-direction: column;
+  }
+}
+
+/* Dimension */
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+
+/* Z-Index */
+.index-1 {
+  z-index: 1;
+}
+.index-9 {
+  z-index: 9;
+}
+.index-99 {
+  z-index: 99;
+}
+
+/*
+  Base
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/*
+  Page
+*/
