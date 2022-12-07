@@ -239,3 +239,32 @@ body {
 /*
   Page
 */
+
+/* Header */
+.header {
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-image: url(images/hero.png);
+}
+.header__grid {
+  row-gap: 50px;
+  padding: 0 24px;
+  justify-items: center;
+}
+.header__title {
+  font-size: 60px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .header__title {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+.header__cta {
+  width: 186px;
+  height: 56px;
+}
