@@ -3,6 +3,7 @@
 :root {
   --white: #fff;
   --gray: #566366;
+  --black: #252e30;
   --green: #2ecc71;
   --light-gray: #919191;
   --very-light-gray: #f2f2f1;
@@ -139,6 +140,9 @@ ul {
 }
 .light-gray {
   color: var(--light-gray);
+}
+.bg-black {
+  background-color: var(--black);
 }
 .bg-green {
   background-color: var(--green);
@@ -284,7 +288,6 @@ body {
 .nav {
   padding: 10px 0;
   min-height: 70px;
-  background-color: #252e30;
 }
 .nav__container,
 .nav__links {
@@ -426,4 +429,17 @@ body {
 .testimonial__quote {
   font-size: 24px;
   line-height: 36px;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 70px 0;
+}
+@media (min-width: 400px) {
+  .portfolio__grid {
+    grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
+  }
+}
+.portfolio__grid__filter {
+  padding: 30px;
 }
