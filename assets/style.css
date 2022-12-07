@@ -134,6 +134,12 @@ ul {
 .white {
   color: var(--white);
 }
+.gray {
+  color: var(--gray);
+}
+.light-gray {
+  color: var(--light-gray);
+}
 .bg-green {
   background-color: var(--green);
 }
@@ -410,4 +416,14 @@ body {
 .resume__education,
 .resume__experience {
   padding: 70px 0;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 20px 0;
+  min-height: 415px;
+}
+.testimonial__quote {
+  font-size: 24px;
+  line-height: 36px;
 }
