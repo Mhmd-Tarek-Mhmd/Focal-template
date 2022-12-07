@@ -358,3 +358,32 @@ body {
   column-gap: 10px;
   align-items: start;
 }
+
+/* Skills */
+.skills {
+  padding: 70px 0;
+}
+.skills__wrapper {
+  row-gap: 150px;
+  column-gap: 30px;
+}
+@media (min-width: 768px) {
+  .skills__wrapper > * {
+    width: 50%;
+  }
+}
+.skills__cta {
+  width: 186px;
+  height: 56px;
+  border-width: 2px;
+}
+.skills__progress {
+  height: 30px;
+  margin-bottom: 60px;
+}
+.skills__progress::before {
+  top: -30px;
+  font-size: 22px;
+  position: absolute;
+  content: attr(aria-label);
+}
