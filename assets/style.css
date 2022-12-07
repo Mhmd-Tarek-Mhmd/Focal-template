@@ -268,3 +268,34 @@ body {
   width: 186px;
   height: 56px;
 }
+
+/* Nav */
+.nav {
+  padding: 10px 0;
+  min-height: 70px;
+  background-color: #252e30;
+}
+.nav__container,
+.nav__links {
+  gap: 10px;
+}
+.nav__logo {
+  font-size: 30px;
+  column-gap: 10px;
+}
+.nav__logo__icon {
+  width: 42px;
+  height: 42px;
+}
+.nav__links {
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.nav__link {
+  will-change: color;
+  transition: color 0.3s;
+}
+.nav__link:hover {
+  color: var(--green);
+}
