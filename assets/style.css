@@ -73,11 +73,17 @@ ul {
 }
 
 .btn {
+  width: 186px;
+  height: 56px;
   cursor: pointer;
   font-weight: 700;
-  border: 1px solid;
+  border: 2px solid;
+  will-change: opacity;
+  transition: 0.3s opacity;
   text-transform: uppercase;
-  transition-duration: 0.3s;
+}
+.btn:hover {
+  opacity: 0.8;
 }
 
 .badge {
@@ -85,6 +91,8 @@ ul {
   height: 29px;
   font-size: 14px;
   font-weight: 700;
+  margin-top: 10px;
+  color: var(--white);
   background-color: var(--green);
 }
 
@@ -265,10 +273,6 @@ body {
     font-size: 40px;
   }
 }
-.header__cta {
-  width: 186px;
-  height: 56px;
-}
 
 /* Nav */
 .nav {
@@ -372,11 +376,6 @@ body {
     width: 50%;
   }
 }
-.skills__cta {
-  width: 186px;
-  height: 56px;
-  border-width: 2px;
-}
 .skills__progress {
   height: 30px;
   margin-bottom: 60px;
@@ -386,4 +385,29 @@ body {
   font-size: 22px;
   position: absolute;
   content: attr(aria-label);
+}
+
+/* Resume */
+.resume__top {
+  height: 440px;
+}
+.resume__wrapper {
+  row-gap: 60px;
+  column-gap: 50px;
+}
+@media (min-width: 768px) {
+  .resume__wrapper > * {
+    width: 50%;
+  }
+}
+.resume__wrapper__grid {
+  row-gap: 80px;
+}
+.resume__top__cta {
+  width: 215px;
+  margin-top: 30px;
+}
+.resume__education,
+.resume__experience {
+  padding: 70px 0;
 }
