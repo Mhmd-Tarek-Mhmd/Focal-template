@@ -18,17 +18,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+input,
 button,
-input {
+textarea {
   font: inherit;
   color: inherit;
-}
-button {
   border: none;
   background: none;
-}
-input {
-  outline-color: var(--black);
 }
 a {
   color: inherit;
@@ -133,7 +129,7 @@ ul {
   color: var(--green);
 }
 .white {
-  color: var(--white);
+  color: var(--white) !important;
 }
 .gray {
   color: var(--gray);
@@ -442,4 +438,30 @@ body {
 }
 .portfolio__grid__filter {
   padding: 30px;
+}
+
+/* Contact */
+.contact {
+  padding: 40px 0;
+}
+.contact__wrapper {
+  row-gap: 50px;
+  column-gap: 30px;
+}
+@media (min-width: 768px) {
+  .contact__wrapper > * {
+    width: 50%;
+  }
+}
+.contact__form {
+  row-gap: 20px;
+}
+.contact__form__input {
+  margin-top: 10px;
+  min-height: 56px;
+  background-color: #4b5456;
+}
+.contact__form__submit {
+  border: none;
+  background-color: #191f21;
 }

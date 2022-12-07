@@ -468,6 +468,68 @@
           </div>
         </div>
       </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact | bg-black">
+        <div class="container">
+          <h2 class="title h1 white">Contact Me</h2>
+
+          <div class="contact__wrapper flex mobile-flex-column">
+            <div class="txt">
+              <p>
+                Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te
+                usu virtute placerat. Purto brute disputando cu est, eam dicam
+                soluta ei. Vel dicam vivendo accusata ei.
+                <br /><br />
+              </p>
+              <address>
+                122 33rd Street East<br />
+                Saskatoon, SK<br />
+                S7K 1R9<br /><br />
+              </address>
+              <ul>
+                <li><span class="white">Email:</span> info@focal.com</li>
+                <li class="contact__mail | flex">
+                  <span class="white">Phone:</span> 1-306-222-2323
+                </li>
+              </ul>
+            </div>
+
+            <form
+              class="contact__form | white grid"
+              onsubmit="event.preventDefault()"
+            >
+              <label>
+                <span>Name *</span>
+                <input
+                  class="contact__form__input | w-full"
+                  type="text"
+                  name="name"
+                />
+              </label>
+              <label>
+                <span>Email Address *</span>
+                <input
+                  class="contact__form__input | w-full"
+                  type="email"
+                  name="email"
+                />
+              </label>
+              <label>
+                <span>Message *</span>
+                <textarea
+                  rows="14"
+                  name="message"
+                  class="contact__form__input | w-full"
+                ></textarea>
+              </label>
+              <button class="contact__form__submit | btn white">
+                Contact Me
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
